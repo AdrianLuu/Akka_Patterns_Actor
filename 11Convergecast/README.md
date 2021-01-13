@@ -3,7 +3,7 @@ To test this pattern you have to schedule some messages in order to get the righ
 Use the scheduler for that, like this:
 
 ```
-getContext().system().scheduler().scheduleOnce(Duration.ofMillis(1000), getSelf(), "go", getContext().system(), ActorRef.noSender());
+getContext().system().scheduler().scheduleOnce(Duration.ofMillis(1000), getSelf(), "go", getContext().system().dispatcher(), ActorRef.noSender());
 ```
 
 ![](img.png?raw=true)
