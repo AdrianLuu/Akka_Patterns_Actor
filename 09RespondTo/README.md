@@ -4,7 +4,7 @@ it is also called the pipe pattern
 
 First, do it entirely with your implementation of simple actors.
 
-Then try to use the pipe pattern explained here https://doc.akka.io/docs/akka/2.5/futures.html#use-the-pipe-pattern 
+OPTIONAL (and difficult): Then try to use the pipe pattern explained here https://doc.akka.io/docs/akka/2.5/futures.html#use-the-pipe-pattern 
 
 ![](img.png)
 
