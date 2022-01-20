@@ -1,4 +1,4 @@
-create this topology from this adjacency matrix:
+create this topology from this adjacency matrix (this graph was created using https://graphonline.ru/en/)
 
 ![](img.png)
 ```
