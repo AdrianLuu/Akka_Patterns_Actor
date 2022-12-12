@@ -9,7 +9,7 @@ Also here we have to make sure the actor "a" is waiting for "b" and "c" to send 
 We consider that "b" and "c" will join in less than 1 second and therefore "a" will wait 1 second before sending the "m" message. This COULD BE done with Thread.sleep(1000) BUT IT'S REALLY BAD.
 Indeed, remember that Thread.sleep(1000) is a really bad bad bad habbit ! You should never use Thread.sleep(1000) because it blocks the actor and blocking an actor is really bad !
 
-Instead, "a" should ask a scheduler to send a message after 1 second. There is a simple scheduler (among more complex ones) in the akka system. On order for "a" to ask the system scheduler to send a message after one second, you should use this method:
+Instead, "a" should ask a scheduler to send a message after 1 second. There is a simple scheduler actor (among more complex ones) in the akka system that already exists. You don't have to create it, use it directly. In order for "a" to ask the system scheduler to send a message after one second, you should use this method that will ask the scheduler actor to "program" a "delayed" message:
 
 ```
 getContext().system().scheduler().scheduleOnce(Duration.ofMillis(1000), getSelf(), "go", getContext().system().dispatcher(), ActorRef.noSender());
