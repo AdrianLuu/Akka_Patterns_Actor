@@ -8,4 +8,4 @@ If an actor receives a message with a sequence number, it stores it (for the fir
 If the sequence number is already stored, it drops the message.
 Be careful that the sequence number should be the same for all actors. Here 0, for example.
 
-You can try to flood a second and a third time: actor A will therefore start with sequence number 1 and 2.
+You then have to flood a second and a third time, with a flooding sequence number equals to 1 and 2: actor A will therefore start with sequence number 1 and 2.
