@@ -1,0 +1,8 @@
+demo\Merger.class
+demo\ReceiverActor.class
+demo\MessageJoin.class
+demo\StringAndRef.class
+demo\MessageUnjoin.class
+demo\SenderActor.class
+demo\Scheduler.class
+demo\MessageString.class

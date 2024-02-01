@@ -31,7 +31,9 @@ Be careful to modify the controlled flooding algorithm so that even if an actor 
 
 Run the algorithm by starting with actor A and answer those questions: 
 - how many messages are received by P ? 
+- 8 times
 - What is the lowest value "length" received by P ?
+- 17
 
 Now run the algorithm by starting with actor L and answer those questions:
 - how many messages are received by P ?
